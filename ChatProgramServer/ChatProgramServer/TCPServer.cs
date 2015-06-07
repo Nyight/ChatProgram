@@ -94,6 +94,7 @@ namespace ChatProgramServer
             }
 
             _clients.Remove(tcpClient);
+            Console.WriteLine("client disconnected");
             tcpClient.Close();
         }
 

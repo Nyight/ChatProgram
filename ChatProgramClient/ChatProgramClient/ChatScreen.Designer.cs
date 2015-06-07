@@ -1,6 +1,6 @@
 ﻿namespace ChatProgramClient
 {
-    partial class Form1
+    partial class ChatScreen
     {
         /// <summary>
         /// Required designer variable.
@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.listBox1 = new System.Windows.Forms.ListBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.txtbxMessage = new System.Windows.Forms.TextBox();
             this.btnSendMsg = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
@@ -60,15 +60,6 @@
             this.splitContainer1.SplitterDistance = 351;
             this.splitContainer1.TabIndex = 0;
             // 
-            // listBox1
-            // 
-            this.listBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(527, 0);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(120, 351);
-            this.listBox1.TabIndex = 0;
-            // 
             // textBox2
             // 
             this.textBox2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -77,6 +68,15 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(527, 351);
             this.textBox2.TabIndex = 1;
+            // 
+            // listBox1
+            // 
+            this.listBox1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(527, 0);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(120, 351);
+            this.listBox1.TabIndex = 0;
             // 
             // txtbxMessage
             // 
@@ -92,6 +92,7 @@
             // btnSendMsg
             // 
             this.btnSendMsg.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnSendMsg.Enabled = false;
             this.btnSendMsg.Location = new System.Drawing.Point(572, 0);
             this.btnSendMsg.Name = "btnSendMsg";
             this.btnSendMsg.Size = new System.Drawing.Size(75, 25);
